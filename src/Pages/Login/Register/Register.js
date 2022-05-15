@@ -40,16 +40,16 @@ const Register = () => {
             <Form onSubmit={handleRegister}>
                 <Form.Group className="mb-3" controlId="name">
                     <Form.Label>Your name</Form.Label>
-                    <Form.Control type="text" placeholder="name" />
+                    <Form.Control type="text" name="name" placeholder="name" />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
-                    <Form.Control type="email" placeholder="Enter email" required />
+                    <Form.Control type="email" name="email" placeholder="Enter email" required />
                 </Form.Group>
 
                 <Form.Group className="mb-2" controlId="formBasicPassword">
                     <Form.Label>Password</Form.Label>
-                    <Form.Control type="password" placeholder="Password" required />
+                    <Form.Control type="password" name="password" placeholder="Password" required />
                 </Form.Group>
                 <input onClick={() => setAgree(!agree)} type="checkbox" name="terms" id="terms" />
                 <label className={agree ? 'ps-2 text-info' : "ps-2 text-danger"} htmlFor="terms">Accept espn sports Terms and Conditions</label>
